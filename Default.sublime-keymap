@@ -1,0 +1,47 @@
+[
+
+  // `cs` triggers surround_change in command mode
+  {
+    "keys": ["s"],
+    "command": "surround_change",
+    "context": [
+      {"key": "setting.command_mode"},
+      {"key": "vi_action", "operand": "enter_insert_mode"}
+    ]
+  }
+
+  // `ds` triggers surround_delete in command mode
+  , {
+    "keys": ["s"],
+    "command": "surround_delete",
+    "context": [
+      {"key": "setting.command_mode"},
+      {"key": "vi_action", "operand": "vi_delete"}
+    ]
+  }
+
+  // `ys` accepts a motion and triggers surround_selection in command mode
+  , {
+    "keys": ["s"],
+    "command": "set_action",
+    "args": {
+      "action": "surround_selection",
+      "description": "Surround"
+    },
+    "context": [
+      {"key": "setting.command_mode"},
+      {"key": "vi_action", "operand": "vi_copy"}
+    ]
+  }
+
+  // `s` triggers surround_selection in visual mode
+  , {
+    "keys": ["s"],
+    "command": "surround_selection",
+    "context": [
+      {"key": "setting.command_mode"},
+      {"key": "selection_empty", "operator": "equal", "operand": false, "match_all": false}
+    ]
+  }
+
+]
