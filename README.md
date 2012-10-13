@@ -1,6 +1,6 @@
-# sublime-vintage-surround
+# vintage-sublime-surround
 
-Sublime-vintage-surround is a [SublimeText 2](http://www.sublimetext.com/) plugin which adds [Vintage](http://www.sublimetext.com/docs/2/vintage.html) key mappings to [sublime-surround](https://github.com/jcartledge/sublime-surround) for a fuller [vim-surround](https://github.com/tpope/vim-surround)-like experience.
+Vintage-sublime-surround is a [SublimeText 2](http://www.sublimetext.com/) plugin which adds [Vintage](http://www.sublimetext.com/docs/2/vintage.html) key mappings to [sublime-surround](https://github.com/jcartledge/sublime-surround) for a fuller [vim-surround](https://github.com/tpope/vim-surround)-like experience.
 
 ## Mappings
 
